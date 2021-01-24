@@ -1,0 +1,49 @@
+.launcher{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: none;
+  color: darkred;
+  z-index: 10;
+  cursor: pointer;
+  transition: all ease 0.5s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:focus{
+    outline: none;
+  }
+
+  .vinyl{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.launcher-active{
+  transform: rotate(360deg);
+  //background-color: brown;
+  color: darkred;
+  opacity: 0.6;
+  border: none;
+}
+
+.launcher-rotate{
+  animation: rotate 2s infinite linear;
+}
+
+//ANIMATION
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

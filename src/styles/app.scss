@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+// Importation du style des composants
+@import "music/launcher";
+@import "music/sidebar";
+@import "music/infos";
+@import "music/player";
+@import "music/playlist";
+@import "music/song";

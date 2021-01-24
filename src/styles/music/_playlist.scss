@@ -1,0 +1,36 @@
+.playlist-container{
+  min-height: 40vh;
+  width: 100%;
+  background-color: lightgrey;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .playlist-songs{
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    background-color: white;
+  }
+}
+
+//CHANGEMENT DE LA SCROLLBAR
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+  height: 100%;
+}
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
