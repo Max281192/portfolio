@@ -6,6 +6,8 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  color: black;
+  background-color: lightgrey;
 }
 
 // Importation du style des composants
@@ -15,3 +17,5 @@ body{
 @import "music/player";
 @import "music/playlist";
 @import "music/song";
+
+@import 'title';

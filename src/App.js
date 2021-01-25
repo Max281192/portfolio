@@ -7,10 +7,14 @@ import './styles/app.scss';
 import data from './data';
 
 // Importation de composants
+    // MUSIC
 import Infos from "./components/music/Infos";
 import Launcher from "./components/music/Launcher";
 import Player from "./components/music/Player";
 import Playlist from "./components/music/Playlist";
+
+    //OTHER
+import Title from "./components/Title";
 
 function App() {
     // Ref
@@ -49,6 +53,7 @@ function App() {
 
     return (
         <div className="App">
+            <Title />
             <Launcher
                 libraryStatus={libraryStatus}
                 setLibraryStatus={setLibraryStatus}

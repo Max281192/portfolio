@@ -1,6 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCompactDisc} from "@fortawesome/free-solid-svg-icons";
+import {faMusic, faLanguage, faMoon} from "@fortawesome/free-solid-svg-icons";
 
 const Launcher = ({libraryStatus,
                   setLibraryStatus,
@@ -8,12 +8,29 @@ const Launcher = ({libraryStatus,
 }) => {
 
     return(
-        <button className={`launcher ${libraryStatus ? 'launcher-active' : ''} ${isPlaying ? 'launcher-rotate' : ''}`} onClick={() => setLibraryStatus(!libraryStatus)}>
-            <FontAwesomeIcon
-                icon={faCompactDisc}
-                className="vinyl"
-            />
-        </button>
+        <div className={`launcher ${libraryStatus ? 'launcher-active' : ''}`}>
+            <button>
+                <FontAwesomeIcon
+                    icon={faLanguage}
+                    className="icon-sidebar language"
+                    size="2x"
+                />
+            </button>
+            <button className={`${isPlaying ? 'launcher-rotate' : ''}`} onClick={() => setLibraryStatus(!libraryStatus)}>
+                <FontAwesomeIcon
+                    icon={faMusic}
+                    className="icon-sidebar vinyl"
+                    size="2x"
+                />
+            </button>
+            <button>
+                <FontAwesomeIcon
+                    icon={faMoon}
+                    className="icon-sidebar moon"
+                    size="2x"
+                />
+            </button>
+        </div>
     )
 };
 
